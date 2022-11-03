@@ -1,0 +1,23 @@
+{
+  "name": "vendor_name/protected-string-hash",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "HO",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "php": ">= 7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hashing\\": "src/"
+    },
+    "files": [
+      "src/helper/helper.php"
+    ]
+  }
+}
