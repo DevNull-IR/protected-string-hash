@@ -2499,9 +2499,9 @@ class Hash{
     public function checkHash(string $string, string $hashed, ?bool $numerical = false): bool
     {
         if ($numerical){
-            $status = $this->numerical($string) === $hashed;
+            $status = $this->numerical($string) == $hashed;
         }else{
-            $status = $this->generate($string) === $hashed;
+            $status = $this->generate($string) == $hashed;
         }
 
         return $status;

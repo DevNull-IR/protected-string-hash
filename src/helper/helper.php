@@ -5,9 +5,9 @@ use Hashing\Hashing;
 
 
 if (! function_exists("Hashing")){
-    function Hashing($class, $method, ...$args)
+    function Hashing($method, ...$args)
     {
-        $hash = new $class();
+        $hash = new Hash();
         return $hash->$method(...$args);
     }
 }
