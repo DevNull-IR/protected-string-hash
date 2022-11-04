@@ -49,7 +49,7 @@ $hashValue = Hashing::generate("Input value");
 
 echo $hashValue;
 
-// Output: 7b6ab87059e76f5f54c37eb42b85c1b2
+// Output: e24c2d67cf4868090a74dfdda535c9e7
 ```
 
 For numeric output:
@@ -65,7 +65,7 @@ $hashValue = Hashing::numerical("Input value");
 
 echo $hashValue;
 
-// Output: 44232530292503110213014
+// Output: 44234332352343331234234322343335250234234332343223433234332342343230
 
 ```
 
@@ -77,7 +77,7 @@ include_once __DIR__ . "/protected-string-hash/vendor/autoload.php";
 
 use Hashing\Hashing;
 
-$hashValue = Hashing::checkHash("Input value", "44232530292503110213014", true);
+$hashValue = Hashing::checkHash("Input value", "44234332352343331234234322343335250234234332343223433234332342343230", true);
 
 var_dump($hashValue);
 
@@ -93,7 +93,7 @@ include_once __DIR__ . "/protected-string-hash/vendor/autoload.php";
 
 use Hashing\Hashing;
 
-$hashValue = Hashing::checkHash("Input value", "7b6ab87059e76f5f54c37eb42b85c1b2");
+$hashValue = Hashing::checkHash("Input value", "e24c2d67cf4868090a74dfdda535c9e7");
 
 var_dump($hashValue);
 
@@ -112,7 +112,7 @@ $hashValue = $hash->generate("Input value");
 
 echo $hashValue;
 
-// Output: 7b6ab87059e76f5f54c37eb42b85c1b2
+// Output: e24c2d67cf4868090a74dfdda535c9e7
 ```
 
 For numeric output:
@@ -129,7 +129,7 @@ $hashValue = $hash->numerical("Input value");
 
 echo $hashValue;
 
-// Output: 44232530292503110213014
+// Output: 44234332352343331234234322343335250234234332343223433234332342343230
 
 ```
 
@@ -142,7 +142,7 @@ include_once __DIR__ . "/protected-string-hash/vendor/autoload.php";
 use Hashing\Hash;
 $hash = new Hash();
 
-$hashValue = $hash->checkHash("Input value", "44232530292503110213014", true);
+$hashValue = $hash->checkHash("Input value", "44234332352343331234234322343335250234234332343223433234332342343230", true);
 
 var_dump($hashValue);
 
@@ -159,7 +159,7 @@ include_once __DIR__ . "/protected-string-hash/vendor/autoload.php";
 use Hashing\Hash;
 $hash = new Hash();
 
-$hashValue = $hash->checkHash("Input value", "7b6ab87059e76f5f54c37eb42b85c1b2");
+$hashValue = $hash->checkHash("Input value", "e24c2d67cf4868090a74dfdda535c9e7");
 
 var_dump($hashValue);
 
@@ -188,7 +188,7 @@ use Hashing Method:
 
 Hashing("generate", "Input value");
 
-// Output: 7b6ab87059e76f5f54c37eb42b85c1b2
+// Output: e24c2d67cf4868090a74dfdda535c9e7
 
 
 ```
