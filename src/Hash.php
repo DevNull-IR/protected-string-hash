@@ -58,7 +58,7 @@ class Hash{
 
     public function __construct()
     {
-        $this->symbol = array_merge($this->symbol, range(0, 9), range("a", "z"));
+        $this->symbol = array_merge($this->symbol, range("a", "z"), range(0, 9));
         $this->symbol = array_merge($this->symbol, range("A", "Z"));
         $this->symbol = array_merge($this->symbol, $this->all_char, $this->emoji);
         $this->symbol_code = range(0, count($this->symbol) - 1);
